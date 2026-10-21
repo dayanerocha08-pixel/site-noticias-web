@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevNews - Cadastro de Notícias</title>
+</head>
+<body>
+
+    <header>
+        <h1>💻 DevNews</h1>
+        <p>Notícias sobre Desenvolvimento Web</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="lista.html">Lista de Notícias</a></li>
+                <li><a href="cadastro.html">Cadastrar Notícia</a></li>
+                <li>
+                    <a href="https://developer.mozilla.org/pt-BR/"
+                       target="_blank" rel="noopener noreferrer">
+                        MDN Web Docs
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Cadastrar Notícia</h2>
+
+        <form action="lista.html" method="get">
+
+            <div>
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecione uma categoria</option>
+                    <option value="Front-end">Front-end</option>
+                    <option value="Back-end">Back-end</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo"
+                       placeholder="Digite o título" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="texto">Texto da notícia:</label>
+                <textarea id="texto" name="texto" rows="6"
+                          cols="40" placeholder="Digite a notícia"
+                          required></textarea>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="foto">Foto:</label>
+                <input type="file" id="foto" name="foto"
+                       accept="image/*" required>
+            </div>
+
+            <br>
+
+            <button type="submit">Cadastrar notícia</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Dayane Rocha.</p>
+    </footer>
+
+</body>
+</html>
