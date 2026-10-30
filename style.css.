@@ -1,0 +1,193 @@
+/* UNIDADE 5 - TAREFA 5 */
+
+/* Cores do site */
+:root {
+    --cor-principal: #173b67;
+    --cor-secundaria: #2878b5;
+    --cor-fundo: #f2f5f8;
+    --cor-texto: #333333;
+    --cor-branco: #ffffff;
+    --cor-borda: #cccccc;
+
+    /* Tipografia */
+    --fonte-principal: Arial, sans-serif;
+    --tamanho-texto: 16px;
+    --tamanho-titulo: 26px;
+}
+
+/* Configuração geral */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-principal);
+    font-size: var(--tamanho-texto);
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: var(--tamanho-titulo);
+}
+
+/* Navegação */
+nav {
+    background-color: var(--cor-secundaria);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 8px 0;
+}
+
+nav a {
+    color: var(--cor-branco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Conteúdo */
+main {
+    padding: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    background-color: var(--cor-branco);
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+}
+
+h2 {
+    color: var(--cor-principal);
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--cor-branco);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid var(--cor-borda);
+    text-align: left;
+}
+
+/* Formulários */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px;
+}
+
+/* Botões */
+button {
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Menu mobile usando somente CSS */
+#menu-toggle {
+    display: none;
+}
+
+.menu-abrir {
+    display: block;
+    color: var(--cor-branco);
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-fechar {
+    display: none;
+    color: var(--cor-branco);
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-links {
+    display: none;
+}
+
+/* Quando o botão abrir for selecionado */
+#menu-toggle:checked ~ .menu-links {
+    display: block;
+}
+
+#menu-toggle:checked ~ .menu-fechar {
+    display: block;
+}
+
+#menu-toggle:checked ~ .menu-abrir {
+    display: none;
+}
+
+/* Versão para telas maiores */
+@media (min-width: 768px) {
+    .menu-abrir,
+    .menu-fechar {
+        display: none !important;
+    }
+
+    .menu-links {
+        display: flex !important;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    main {
+        padding: 30px;
+    }
+}
