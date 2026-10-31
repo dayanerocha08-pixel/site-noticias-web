@@ -10,21 +10,25 @@
 <body>
 
     <header>
-        <div>
-            <h1>💻 DevNews</h1>
-            <p>Notícias sobre Desenvolvimento Web</p>
-        </div>
+  <div>
+    <h1>DevNews</h1>
+    <p>Notícias sobre Desenvolvimento Web</p>
+  </div>
 
-        <nav>
-    <input type="checkbox" id="menu-toggle">
+  <!-- O checkbox e os botões ficam aqui no mesmo nível, antes do nav -->
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-abrir">☰</label>
 
-    <label for="menu-toggle" class="menu-abrir">
-        ☰
-    </label>
-
-    <label for="menu-toggle" class="menu-fechar">
-        ✕
-    </label>
+  <nav>
+    <!-- O label de fechar pode ficar aqui dentro do nav -->
+    <label for="menu-toggle" class="menu-fechar">✖</label>
+    
+    <!-- Seus links do menu aqui -->
+    <ul>
+      ...
+    </ul>
+  </nav>
+</header>
 
     <ul class="menu-links">
         <li><a href="index.html">Início</a></li>
