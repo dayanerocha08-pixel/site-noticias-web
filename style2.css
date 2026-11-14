@@ -1,0 +1,97 @@
+# Conheça o Colab
+
+vetor = [1,2,3,4,5,6,7,8,9,10]
+
+print("Valores do vetor:")
+
+for i in range(10):
+  print(vetor[i])
+
+vetor = []
+
+for i in range(10):
+  numero = int(input("Digite um numero:"))
+  vetor .append(numero)
+
+maior = max(vetor)
+menor = min(vetor)
+
+print("Maior valor:", maior)
+print("Indice de maior valor:", 
+vetor.index(maior))
+
+print("menor valor:", menor)
+print("Indice de menor valor:",
+vetor.index(menor))
+
+
+<div class="markdown-google-sans">
+  <h2>O que é o Colab?</h2>
+</div>
+
+O Colab, ou "Colaboratory", permite escrever e executar Python no navegador e conta com o seguinte: 
+- Nenhuma configuração necessária
+- Acesso a GPUs sem custo financeiro
+- Compartilhamento fácil
+
+Não importa se você <strong>estuda</strong>, <strong>é cientista de dados</strong> ou <strong>pesquisa sobre IA</strong>, o Colab pode facilitar seu trabalho. Assista <a href="https://www.youtube.com/watch?v=inN8seMm7UI">Introdução ao Colab</a> ou <a href="https://www.youtube.com/watch?v=rNgswRZ2C1Y">Recursos do Colab que você talvez não conheça</a> para saber mais ou simplesmente comece a usar abaixo!
+
+matriz = []
+
+for i in range(2):
+  linha = []
+  for j in range(2):
+    numero = int(input("Digite um numero: "))
+    linha.append(numero)
+  matriz.append(linha)
+
+print("matriz transposta:")
+
+for j in range(2):
+  for i in range(2):
+    print(matriz[i][j], end=" ")
+  print()
+
+matriz1 = []
+matriz2 = []
+soma = []
+
+
+print("Digite os valores da primeira Matriz:")
+
+for i in range(3):
+  linha = []
+  for j in range(3):
+    valor = (input("Digite um numero:  "))
+    linha.append(valor)
+  matriz1.append(linha)
+
+print("digite os valores da segunda matriz: ")
+
+for i in range(3):
+    linha = []
+    for j in range(3):
+        valor = int(input("digite um numero: "))
+        linha.append(valor)
+    matriz2.append(linha)
+
+for i in range(3):
+    linha = []
+    for j in range(3):
+        linha.append(int(matriz1[i][j]) +
+        int(matriz2[i][j]))
+    soma.append(linha)
+
+print("resultado da soma das matrizes:")
+
+for linha in soma:
+  print(linha)
+
+<div class="markdown-google-sans">
+
+## <strong>Vamos começar</strong>
+</div>
+
+O documento que você está lendo não é uma página da Web estática, mas sim um ambiente interativo chamado <strong>notebook Colab</strong> que permite escrever e executar código.
+
+Por exemplo, aqui está uma <strong>célula de código</strong> com um breve script Python que calcula um valor, armazena-o em uma variável e imprime o resultado:
